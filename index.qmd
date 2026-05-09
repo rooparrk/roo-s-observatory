@@ -119,8 +119,3 @@ title-block-banner: false
 
 </div>
 ```
-
-
-
-
-
