@@ -3,12 +3,12 @@ project:
   output-dir: _site
  
 website:
-  title: "Roo's Thoughtcloud"
+  title: "Roo's Observatory"
   favicon: images/favicon.png
   
   navbar:
     logo: images/logo.png
-    title: "Roo's Thoughtcloud"
+    title: "Roo's Observatory"
     left:
       - text: "{{< fa house-chimney >}}"
         href: index.qmd
@@ -20,11 +20,11 @@ website:
       - text: "Projects"
         menu:
           - text: "Art Markets & the PEP Problem"
-            href: projects/art-pep/index.qmd
+            href: projects/art-pep/art-pep-index.qmd
           - text: "Trade-Based Money Laundering"
-            href: projects/tbml/index.qmd
+            href: projects/tbml/tbml-index.qmd
           - text: "Crypto & Financial Crime"
-            href: projects/crypto/index.qmd
+            href: projects/crypto/crypto-index.qmd
       - icon: linkedin
         href: https://linkedin.com/in/roopa-kaustubha-rayudu-53ba5216b/
         aria-label: LinkedIn
@@ -34,7 +34,7 @@ website:
  
   page-footer:
     center: |
-      <span class="footer-text">Roo's Thoughtcloud ☁️ · soft mind, sharp thinking · 2026</span>
+      <span class="footer-text">Roo's Observatory ✦ · soft mind, sharp thinking · 2026</span>
  
 format:
   html:
