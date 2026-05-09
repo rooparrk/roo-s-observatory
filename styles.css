@@ -14,8 +14,8 @@
   --cloud-periwinkle: #6a8eb8;
   --cloud-lavender:   #a890c0;
   --cloud-slate:      #28333f;
-  --cloud-mid:        #4a5a6a;
-  --cloud-muted:      #7a8a9a;
+  --cloud-mid:        #36454f;
+  --cloud-muted:      #5a6a7a;
   --cloud-border:     #ddd0c0;
   --cloud-border-lt:  #ece4d8;
 
@@ -34,7 +34,7 @@ body {
   background-color: var(--cloud-bg);
   color: var(--cloud-slate);
   font-size: 0.95rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -235,9 +235,9 @@ a {
 
 .intro-body {
   font-size: 1rem;
-  color: var(--cloud-mid);
+  color: var(--cloud-slate);
   line-height: 2.05;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .intro-body em {
@@ -282,10 +282,10 @@ a {
 
 .projects-subhead {
   font-size: 0.875rem;
-  color: var(--cloud-muted);
+  color: var(--cloud-mid);
   line-height: 1.95;
   max-width: 600px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* Each project row */
@@ -374,9 +374,9 @@ a {
 
 .project-desc {
   font-size: 0.875rem;
-  color: var(--cloud-mid);
+  color: var(--cloud-slate);
   line-height: 1.95;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 580px;
 }
 
@@ -639,9 +639,9 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
   margin: 0 auto 2rem;
   font-family: var(--font-body);
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.05;
-  color: #b8c4d4;
+  color: #c8d8e8;
 }
 .obs-note strong { color: #f0e6c8; font-weight: 400; }
 .obs-tags {
@@ -800,8 +800,8 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 .obs-skill-list {
   font-family: var(--font-body);
   font-size: 0.82rem;
-  font-weight: 300;
-  color: #b8c4d4;
+  font-weight: 400;
+  color: #c8d8e8;
   line-height: 1.85;
 }
 
@@ -810,8 +810,8 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 .obs-cert-item {
   font-family: var(--font-body);
   font-size: 0.845rem;
-  font-weight: 300;
-  color: #b8c4d4;
+  font-weight: 400;
+  color: #c8d8e8;
   line-height: 1.75;
   padding-left: 1.1rem;
   position: relative;
@@ -824,6 +824,10 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
   color: #c9a96e;
   top: 0.35rem;
   opacity: 0.65;
+}
+.obs-cert-featured {
+  color: #f0e6c8;
+  font-weight: 500;
 }
 
 /* Personal section */
@@ -853,8 +857,8 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 .obs-personal-text {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  font-weight: 300;
-  color: #b8c4d4;
+  font-weight: 400;
+  color: #c8d8e8;
   line-height: 2.05;
   max-width: 620px;
   margin-bottom: 1.4rem;
@@ -945,9 +949,9 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 
 .proj-subtitle {
   font-size: 0.95rem;
-  color: var(--cloud-mid);
+  color: var(--cloud-slate);
   line-height: 2;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 640px;
   margin-bottom: 0;
 }
@@ -1036,9 +1040,9 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 
 .proj-prose {
   font-size: 0.925rem;
-  color: var(--cloud-mid);
+  color: var(--cloud-slate);
   line-height: 2.05;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1.1rem;
   max-width: 620px;
 }
@@ -1095,7 +1099,7 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
   font-size: 0.83rem;
   color: var(--cloud-muted);
   line-height: 1.85;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* Living notice */
@@ -1122,7 +1126,7 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 .proj-notice-text {
   font-family: var(--font-display);
   font-size: 0.95rem;
-  color: var(--cloud-mid);
+  color: var(--cloud-slate);
   line-height: 1.8;
   font-style: italic;
   margin: 0;
