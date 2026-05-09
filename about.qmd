@@ -41,11 +41,11 @@ page-layout: full
     <h1 class="obs-title">Roopa Kaustubha <em>Rayudu</em></h1>
     <p class="obs-subtitle">soft mind, sharp thinking</p>
     <p class="obs-note">
-      I make things that are <strong>impactful and beautiful</strong> — or at least try to.
-      Currently doing my Masters in IT in Business (Fintech) at SMU, building toward
-      a career in risk and financial crime analytics. I'm drawn to the idea that
-      rigorous thinking and careful aesthetics aren't opposites —
-      the best work lives in that intersection.
+      I study how hidden financial structures operate — and use data to trace the patterns they leave behind.
+      Currently completing a Masters in IT in Business (Financial Technology &amp; Analytics) at SMU,
+      building toward a career in <strong>behavioral financial crime analytics</strong>:
+      transaction risk, AML typology analysis, and the intersection of ownership structures,
+      financial flows, and regulatory frameworks across Singapore and the wider region.
     </p>
   </div>
 
@@ -104,25 +104,37 @@ page-layout: full
 
   <hr class="obs-divider" />
 
+  <!-- Credentials -->
+  <div class="obs-section">
+    <p class="obs-section-label">Credentials</p>
+    <div class="obs-cert-list">
+      <p class="obs-cert-item obs-cert-featured">ICA Certificate in KYC &amp; Customer Due Diligence — International Compliance Association</p>
+      <p class="obs-cert-item">M5 — Financial Advisory Regulations (MAS)</p>
+      <p class="obs-cert-item">M9 / M9A — Life Insurance &amp; Investment-Linked Products (MAS)</p>
+    </div>
+  </div>
+
+  <hr class="obs-divider" />
+
   <!-- Skills -->
   <div class="obs-section">
     <p class="obs-section-label">Instruments</p>
     <div class="obs-skills-grid">
       <div class="obs-skill-group">
         <p class="obs-skill-group-label">Programming</p>
-        <p class="obs-skill-list">Python · SQL · R · Java</p>
-      </div>
-      <div class="obs-skill-group">
-        <p class="obs-skill-group-label">Platforms & Tools</p>
-        <p class="obs-skill-list">Splunk · ServiceNow · Jira · Git · Jenkins · Ansible · MySQL</p>
+        <p class="obs-skill-list">Python · SQL · R</p>
       </div>
       <div class="obs-skill-group">
         <p class="obs-skill-group-label">Analytics & Viz</p>
-        <p class="obs-skill-list">Tableau · Excel Modelling · Quarto · R</p>
+        <p class="obs-skill-list">Tableau · Pandas · Quarto · Excel Modelling</p>
+      </div>
+      <div class="obs-skill-group">
+        <p class="obs-skill-group-label">Tools</p>
+        <p class="obs-skill-list">Git · MySQL · Jupyter</p>
       </div>
       <div class="obs-skill-group">
         <p class="obs-skill-group-label">Domain</p>
-        <p class="obs-skill-list">AML Typologies · KYC / CDD · SIT / UAT · Regulatory Compliance</p>
+        <p class="obs-skill-list">AML Typologies · KYC / CDD · Transaction Risk · Regulatory Compliance · Network Analysis</p>
       </div>
       <div class="obs-skill-group">
         <p class="obs-skill-group-label">Languages</p>
@@ -131,27 +143,14 @@ page-layout: full
     </div>
   </div>
 
-  <hr class="obs-divider" />
-
-  <!-- Certifications -->
-  <div class="obs-section">
-    <p class="obs-section-label">Credentials</p>
-    <div class="obs-cert-list">
-      <p class="obs-cert-item">ICA Certificate in KYC & Customer Due Diligence</p>
-      <p class="obs-cert-item">M5 — Financial Advisory Regulations (MAS)</p>
-      <p class="obs-cert-item">M9 / M9A — Life Insurance & Investment-Linked Products (MAS)</p>
-    </div>
-  </div>
-
   <!-- Personal -->
   <div class="obs-personal">
     <p class="obs-personal-eyebrow">Beyond the telescope</p>
     <p class="obs-personal-text">
-      I am, at heart, a reader and a thinker. History, philosophy, literary fiction —
-      I'm drawn to anything that tries to make sense of why things are the way they are.
-      I think good storytelling and good analysis aren't so different: both are about
-      finding the pattern underneath the surface, and then finding the right form
-      to show it to someone else.
+      I read widely — history, philosophy, and literary fiction. The common thread is an interest
+      in how things actually work underneath official explanations: how power moves, how institutions
+      fail, how people behave when the rules are opaque. It is not entirely different from what draws
+      me to financial crime — the same impulse to follow a structure until it reveals itself.
     </p>
   </div>
 
