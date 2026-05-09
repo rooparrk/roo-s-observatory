@@ -126,11 +126,11 @@ page-layout: full
       </div>
       <div class="obs-skill-group">
         <p class="obs-skill-group-label">Analytics & Viz</p>
-        <p class="obs-skill-list">Tableau · Pandas · Quarto · Excel Modelling</p>
+        <p class="obs-skill-list">Tableau · Pandas · NumPy  · Matplotlib  · Plotly  ·  Quarto · Excel Modelling</p>
       </div>
       <div class="obs-skill-group">
         <p class="obs-skill-group-label">Tools</p>
-        <p class="obs-skill-list">Git · MySQL · Jupyter</p>
+        <p class="obs-skill-list">Git · MySQL · Anaconda</p>
       </div>
       <div class="obs-skill-group">
         <p class="obs-skill-group-label">Domain</p>
