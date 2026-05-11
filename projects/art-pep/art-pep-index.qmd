@@ -144,7 +144,6 @@ page-layout: full
       </div>
     </div>
 
-    <!-- Living notice -->
     <div class="proj-notice">
       <span class="proj-notice-mark">✦</span>
       <p class="proj-notice-text">

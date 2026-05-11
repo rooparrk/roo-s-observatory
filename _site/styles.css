@@ -19,6 +19,30 @@
   --cloud-border:     #ddd0c0;
   --cloud-border-lt:  #ece4d8;
 
+/* for about & main page design */
+  --obs-bg:           #060b17;
+  --obs-dusk-warm:    #1a1018;
+  --obs-dusk-mid:     #0f1824;
+  --obs-dusk-cool:    #0a1420;
+  --obs-amber:        #c9a96e;
+  --obs-amber-dim:    rgba(201, 169, 110, 0.45);
+  --obs-cream:        #f0e6c8;
+  --obs-cream-dim:    #d8cfc0;
+  --obs-blue:         #9aaed4;
+  --obs-blue-dim:     rgba(154, 174, 212, 0.6);
+  --obs-rose:         #c9908a;
+  --obs-border:       rgba(201, 169, 110, 0.1);
+  --obs-border-warm:  rgba(201, 144, 138, 0.15);
+
+  --dusk-header-top:  #12091a;
+  --dusk-header-mid:  #1a1228;
+  --dusk-header-low:  #1e1a2e;
+  --dusk-body-top:    #141824;
+  --dusk-body-mid:    #111622;
+  --dusk-text:        #d4ccbc;
+  --dusk-text-bright: #ede5d4;
+  --dusk-text-dim:    #9aabb8;
+
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'DM Sans', sans-serif;
   --font-mono:    'DM Mono', 'Courier New', monospace;
@@ -41,7 +65,6 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  color: var(--cloud-slate);
   font-weight: 400;
   line-height: 1.15;
 }
@@ -808,7 +831,7 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 .obs-home-hero {
   text-align: center;
   padding: 6rem 0 4rem;
-  border-bottom: 1px solid rgba(200, 180, 140, 0.12);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.12);
   margin-bottom: 4rem;
 }
 
@@ -827,12 +850,12 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(200, 180, 140, 0.65);
+  color: rgba(201, 169, 110, 0.65);
 }
 
 .obs-hero-spec-dot {
   font-size: 0.6rem;
-  color: rgba(200, 180, 140, 0.3);
+  color: rgba(201, 169, 110, 0.3);
   letter-spacing: 0;
 }
 
@@ -840,7 +863,7 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 
 .obs-home-projects-header {
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(200, 180, 140, 0.09);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.09);
   margin-bottom: 0;
 }
 
@@ -861,7 +884,7 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
   align-items: start;
   gap: 2rem;
   padding: 2.8rem 0;
-  border-bottom: 1px solid rgba(200, 180, 140, 0.09);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.09);
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -879,15 +902,15 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 }
 
 .obs-project-row:hover::before { background: rgba(255, 255, 255, 0.03); }
-.obs-project-row:hover .obs-project-arrow { transform: translateX(6px); color: #c9a96e; }
-.obs-project-row:hover .obs-project-title { color: #f0e6c8; }
+.obs-project-row:hover .obs-project-arrow { transform: translateX(6px); color: var(--obs-amber); }
+.obs-project-row:hover .obs-project-title { color: var(--obs-cream); }
 
 .obs-project-index {
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-style: italic;
   font-weight: 300;
-  color: #c9a96e;
+  color: var(--obs-amber);
   opacity: 0.6;
   letter-spacing: 0.04em;
   padding-top: 0.3rem;
@@ -909,13 +932,13 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
   font-weight: 500;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: #9aaed4;
+  color: var(--obs-blue);
 }
 
 .obs-project-tools {
   font-family: var(--font-mono);
   font-size: 0.67rem;
-  color: rgba(200, 180, 140, 0.45);
+  color: rgba(201, 169, 110, 0.45);
   letter-spacing: 0.04em;
 }
 
@@ -940,7 +963,7 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
 
 .obs-project-arrow {
   font-size: 1.1rem;
-  color: rgba(200, 180, 140, 0.25);
+  color: rgba(201, 169, 110, 0.25);
   padding-top: 2rem;
   transition: transform var(--transition), color var(--transition);
   justify-self: end;
@@ -954,4 +977,8 @@ body.obs-active .footer-text { color: rgba(200, 180, 140, 0.3) !important; }
   .obs-project-arrow { display: none; }
   .obs-home-page { padding-left: 1.2rem; padding-right: 1.2rem; }
   .obs-hero-specs-row { gap: 0.4rem; }
+  .proj-header { padding: 3.5rem 1.2rem 2.5rem; }
+  .proj-body { padding: 2.5rem 1.2rem 4rem; }
+  .proj-section { grid-template-columns: 32px 1fr; gap: 1.2rem; }
+  .proj-section-line { display: none;}
 }
