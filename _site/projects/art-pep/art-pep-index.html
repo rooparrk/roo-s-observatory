@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -157,27 +157,45 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script>document.body.classList.add('dusk-active');</script>
+
+<div class="dusk-starfield" aria-hidden="true">
+  <div class="dusk-star" style="width:1px;height:1px;top:3%;left:12%;--dur:4.2s;--del:0.3s;--lo:0.08;--hi:0.5;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:7%;left:31%;--dur:5.1s;--del:1.1s;--lo:0.1;--hi:0.65;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:5%;left:54%;--dur:3.8s;--del:0.5s;--lo:0.07;--hi:0.45;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:10%;left:72%;--dur:4.6s;--del:1.7s;--lo:0.1;--hi:0.6;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:4%;left:88%;--dur:3.5s;--del:0.8s;--lo:0.07;--hi:0.4;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:14%;left:6%;--dur:4.9s;--del:2.0s;--lo:0.06;--hi:0.38;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:18%;left:45%;--dur:4.3s;--del:0.2s;--lo:0.09;--hi:0.55;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:22%;left:78%;--dur:5.3s;--del:1.4s;--lo:0.07;--hi:0.42;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:28%;left:22%;--dur:4.0s;--del:0.9s;--lo:0.06;--hi:0.35;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:32%;left:91%;--dur:4.7s;--del:1.6s;--lo:0.08;--hi:0.48;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:8%;left:62%;--dur:3.9s;--del:0.4s;--lo:0.07;--hi:0.44;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:16%;left:37%;--dur:4.4s;--del:1.2s;--lo:0.06;--hi:0.36;"></div>
+</div>
+
 <div class="proj-page">
 
-  <!-- PAGE HEADER -->
   <header class="proj-header">
     <div class="proj-header-inner">
       <div class="proj-back">
         <a href="../../index.html" class="proj-back-link">← All Projects</a>
       </div>
-      <p class="proj-eyebrow">Visual Analytics · Network Analysis · AML Typologies</p>
+      <p class="proj-eyebrow">Network Analysis · Ownership Structures · AML Typologies</p>
       <h1 class="proj-title">Art Markets &amp; the PEP Problem</h1>
       <p class="proj-subtitle">
-        The art market's opacity makes it a documented vehicle for laundering —
-        especially among politically exposed persons. This project combines auction
-        data, ICIJ offshore leaks, and PEP network analysis to visualise how money
-        and influence move through high-value cultural assets.
+        The art market's opacity is structural, not incidental — shell companies,
+        freeports, and opaque intermediary chains create documented pathways for
+        value movement that rarely trigger standard financial monitoring. This project
+        reconstructs those pathways analytically, tracing where ICIJ offshore entity
+        data, public auction records, and PEP networks intersect.
       </p>
       <div class="proj-header-rule"></div>
       <div class="proj-tag-row">
-        <span class="proj-tag">R</span>
-        <span class="proj-tag">Tableau</span>
+        <span class="proj-tag">R· igraph</span>
+        <span class="proj-tag">Python · pandas</span>
         <span class="proj-tag">ICIJ Offshore Leaks</span>
+        <span class="proj-tag">OpenSanctions</span>
         <span class="proj-tag">Network Analysis</span>
         <span class="proj-tag">FATF Typologies</span>
         <span class="proj-tag proj-tag--status">In Progress ◎</span>
@@ -185,114 +203,173 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </header>
 
-  <!-- BODY -->
+  <div class="proj-header-fade"></div>
+  
   <div class="proj-body">
 
-    <!-- Section 1 -->
+    <!-- Section I -->
     <div class="proj-section">
       <div class="proj-section-marker">
         <span class="proj-section-num">I</span>
         <div class="proj-section-line"></div>
       </div>
       <div class="proj-section-content">
-        <h2 class="proj-section-title anchored">Why the art market</h2>
+        <h2 class="proj-section-title anchored">The structural problem with art markets</h2>
         <p class="proj-prose">
-          Art is unusual as an asset class: it is portable, subjective in value,
-          and largely unregulated compared to financial instruments of equivalent worth.
-          The FATF's 2023 guidance on art market money laundering is explicit — auction
-          houses, galleries, and freeport storage facilities represent a documented
-          typology vector, particularly for PEPs seeking to move and obscure wealth
-          across jurisdictions without triggering standard financial monitoring.
+          Art is unusual as an asset class: it is portable, its value is subjective
+          and difficult to verify externally, and its ownership has historically been
+          opaque by design. Until the EU's 5th Anti-Money Laundering Directive (2020)
+          and analogous national measures, auction houses and art dealers were largely
+          outside the scope of AML frameworks that applied to banks and financial
+          institutions. That gap closed late — and enforcement has been uneven.
         </p>
         <p class="proj-prose">
-          The connection between art markets and PEPs is not theoretical. The Panama
-          and Pandora Papers contain documented examples of offshore structures used
-          to purchase high-value art, with ownership deliberately obscured through
-          shell companies and nominee arrangements. This project is an attempt to
-          surface that pattern analytically.
+          FATF's 2023 guidance on art market money laundering identifies the core
+          structural risk: the layering stage in particular benefits from the art
+          market's tolerance for anonymous or nominee ownership, the use of freeport
+          storage to hold assets outside normal customs and tax visibility, and the 
+          presence of sophisticated intermidiary chains - private dealers, advisors,
+          and holding structures - that place distance between the ultimate benificial
+          owner and any transaction record. These are not theoretical vulnerabilities.
+          The Panama and Pandora papers document specific instances of offshore
+          sturctures used to acquire high-value art, with ownership deliberately
+          routed through shell companies in low-transparency jurisdictions.
+        </p>
+        <p class="proj-prose">
+          The analytical interest here is not simply "art is used for laundering."
+          It is in the operational mechanics: how ownership structures and intermediary
+          chains create observable traces across public datasets that are rarely put
+          together in a single analytical view.
         </p>
       </div>
     </div>
 
-    <!-- Section 2 -->
+    <!-- Section II -->
     <div class="proj-section">
       <div class="proj-section-marker">
         <span class="proj-section-num">II</span>
         <div class="proj-section-line"></div>
       </div>
       <div class="proj-section-content">
-        <h2 class="proj-section-title anchored">Method &amp; approach</h2>
+        <h2 class="proj-section-title anchored">Analytical Question</h2>
         <p class="proj-prose">
-          The project works across three linked analytical threads: price anomaly
-          detection in public auction records, geographic mapping of freeport flows
-          (Geneva, Singapore, Luxembourg, Delaware), and cross-referencing against
-          ICIJ offshore entity data and the OpenSanctions PEP database to identify
-          counterparty overlap.
+          Among entities and officers appearing in the ICIJ Offshore Leaks database,
+          which demonstrate traceable participation — direct or through linked
+          intermediaries — in major auction house sale records? And among those
+          intersections, what structural characteristics emerge: which jurisdictions
+          concentrate, which entity types recur, and which intermediaries bridge
+          otherwise disconnected clusters?
         </p>
         <p class="proj-prose">
-          Where a named auction buyer or seller appears in both public art market
-          records and ICIJ offshore data — or maps to a known PEP entity — that
-          intersection becomes the unit of analysis. The output is not a legal
-          accusation; it's a demonstration of what the data makes visible when
-          you connect sources that are rarely put side by side.
+          A secondary question runs alongside it: where ICIJ-linked entities also
+          appear in the OpenSanctions PEP registry, does the network structure around
+          those nodes show features consistent with FATF's documented art market
+          typology indicators — specifically, jurisdictional layering, nominee
+          ownership, and freeport geography?
         </p>
-
-        <!-- Method rows -->
-        <div class="proj-sources">
-          <p class="proj-sources-label">Data Sources</p>
-          <div class="proj-source-row">
-            <div class="proj-source-index">01</div>
-            <div class="proj-source-body">
-              <p class="proj-source-name">ICIJ Offshore Leaks Database</p>
-              <p class="proj-source-desc">Panama Papers, Pandora Papers — offshore entity structures, beneficial ownership networks, and jurisdiction mapping.</p>
-            </div>
-          </div>
-          <div class="proj-source-row">
-            <div class="proj-source-index">02</div>
-            <div class="proj-source-body">
-              <p class="proj-source-name">Public Auction Records</p>
-              <p class="proj-source-desc">Christie's and Sotheby's publicly available sale results — lot prices, sale dates, buyer/seller regions for anomaly analysis.</p>
-            </div>
-          </div>
-          <div class="proj-source-row">
-            <div class="proj-source-index">03</div>
-            <div class="proj-source-body">
-              <p class="proj-source-name">OpenSanctions PEP Database</p>
-              <p class="proj-source-desc">Structured dataset of politically exposed persons across jurisdictions — used for counterparty cross-referencing and network construction.</p>
-            </div>
-          </div>
-          <div class="proj-source-row">
-            <div class="proj-source-index">04</div>
-            <div class="proj-source-body">
-              <p class="proj-source-name">Basel Art Market Report</p>
-              <p class="proj-source-desc">Annual market sizing and geographic flow data — contextual baseline for understanding scale and opacity of the global art trade.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
-    <!-- Section 3 -->
+    <!-- Section III -->
     <div class="proj-section">
       <div class="proj-section-marker">
         <span class="proj-section-num">III</span>
         <div class="proj-section-line"></div>
       </div>
       <div class="proj-section-content">
-        <h2 class="proj-section-title anchored">Expected output</h2>
+        <h2 class="proj-section-title anchored">Analytical Architecture</h2>
         <p class="proj-prose">
-          An interactive Tableau dashboard visualising auction price anomalies and
-          geographic freeport flows alongside an R network visualisation of PEP
-          counterparty connections. The written analysis maps findings to FATF's
-          2023 art market ML typology guidance — grounding the visual work in
-          regulatory vocabulary relevant to CDD and EDD practice.
+        The project builds across 3 linked analytical layers, each producing
+        a distinct output that feeds into the next.
         </p>
         <p class="proj-prose">
-          The goal is not to reinvent forensic accounting. It is to show what becomes
-          visible when you combine public data sources with AML typology thinking —
-          and to practice the kind of cross-source analysis that underlies real
-          financial crime intelligence work.
+          <strong style="color:#ede5d4;">Layer 1 — Entity matching.</strong>
+          Cross-reference ICIJ Offshore Leaks entity and officer names against
+          publicly available auction house sale records using Python (pandas,
+          fuzzy matching). The goal is a structured table of flagged intersections:
+          entity name, ICIJ jurisdiction, auction house, sale year, and match
+          confidence level. Scale matters less than analytical rigour here —
+          even a small, well-validated intersection set is more credible than a
+          large, noisy one.
+        </p>
+        <p class="proj-prose">
+          <strong style="color:#ede5d4;">Layer 2 — Network construction.</strong>
+          Build a directed network graph in R using igraph, where nodes are
+          entities (persons, shell companies, auction houses, jurisdictions, freeports)
+          and edges are documented relationships (ownership, shared officer, 
+          sole participation, geographic linkage, intermediary role). The primary
+          analytical output is this network - visualised to surface structural 
+          features: which nodes have high betweeness centrality (bridge entities),
+          which jurisdictions cluster, and where the graph becomes locally dense
+          in ways consistent with layering structures.
+        </p>
+        <p class="proj-prose">
+          <strong style="color:#ede5d4;">Layer 3 — Typology mapping.</strong>
+          For each flagged cluster or structurally significant node, annotate
+          against FATF's 2023 art market ML typology indicators. This is the 
+          interpretive layer that connects the graph findings to regulatory 
+          vocabulary: not a legal accusation, but a structured analytical mapping
+          of what the data makes visible and which CDD or EDD provisions it would
+          activate in a compliant infrastructure.
+        </p>
+
+        <div class="proj-sources">
+          <p class="proj-sources-label">Data Sources</p>
+          <div class="proj-source-row">
+            <div class="proj-source-index">01</div>
+            <div class="proj-source-body">
+              <p class="proj-source-name">ICIJ Offshore Leaks Database</p>
+              <p class="proj-source-desc">Downloadable CSV — entities, officers, intermediaries, addresses, jurisdictions from Panama Papers, Pandora Papers, and related investigations. Primary dataset for entity matching and network construction.</p>
+            </div>
+          </div>
+          <div class="proj-source-row">
+            <div class="proj-source-index">02</div>
+            <div class="proj-source-body">
+              <p class="proj-source-name">Christie's &amp; Sotheby's Public Sale Records</p>
+              <p class="proj-source-desc">Publicly available lot-level sale results — lot title, hammer price, sale date, buyer/seller region. Used for entity matching against ICIJ records and for price anomaly context.</p>
+            </div>
+          </div>
+          <div class="proj-source-row">
+            <div class="proj-source-index">03</div>
+            <div class="proj-source-body">
+              <p class="proj-source-name">OpenSanctions PEP Registry</p>
+              <p class="proj-source-desc">Structured, downloadable dataset of politically exposed persons across jurisdictions — name, role, linked entities, jurisdiction. Used for secondary cross-referencing against ICIJ-matched nodes.</p>
+            </div>
+          </div>
+          <div class="proj-source-row">
+            <div class="proj-source-index">04</div>
+            <div class="proj-source-body">
+              <p class="proj-source-name">FATF Art Market Guidance (2023)</p>
+              <p class="proj-source-desc">Primary regulatory reference for typology mapping — specific ML indicators for auction houses, private dealers, freeport storage, and PEP-linked art market participation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section IV -->
+    <div class="proj-section">
+      <div class="proj-section-marker">
+        <span class="proj-section-num">IV</span>
+        <div class="proj-section-line"></div>
+      </div>
+      <div class="proj-section-content">
+        <h2 class="proj-section-title anchored">What the output will show</h2>
+        <p class="proj-prose">
+        The finished project delivers 3 outputs. A validated entity intersection
+        table - ICIJ entities with traceable auction market presence, annotated by 
+        jurisdiction and entity type. A network graph visualising the ownership and 
+        intermidiary structure around flagged nodes, with betweeness centrality
+        surfacing the bridged entities that connect otherwise seperate clusters.
+        And a structured typology annotation mapping each significant finding to
+        FATF indicator language - so the output is legible not just analytically
+        but in the vocabulary of a complicance  practitioner.
+        </p>
+        <p class="proj-prose">
+          The goal is not to identify money launderers. It is to demonstrate what
+          becomes analytically visible when you connect public datasets that are
+          rarely read together — and to practice the cross-source, ownership-tracing
+          analysis that underlies real financial crime intelligence work.
         </p>
       </div>
     </div>
@@ -300,13 +377,12 @@ ul.task-list li input[type="checkbox"] {
     <div class="proj-notice">
       <span class="proj-notice-mark">✦</span>
       <p class="proj-notice-text">
-        <em>Work in progress — visualisations and full analysis will be published
-        here as the project develops.</em>
+        Analysis in progress. Entity intersection table, network graph, and typology
+        mapping will be published here as outputs are completed.
       </p>
     </div>
 
   </div>
-
 </div>
 
 
