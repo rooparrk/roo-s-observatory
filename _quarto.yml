@@ -41,7 +41,7 @@ format:
     theme:
       - cosmo
       - theme.scss
-    css: styles.css
+    css: styles1.css
     toc: false
     page-layout: full
     include-in-header:
