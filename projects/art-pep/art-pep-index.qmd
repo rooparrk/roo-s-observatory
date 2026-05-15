@@ -1,11 +1,10 @@
 ---
 title: ""
 page-layout: full
+body-classes: dusk-active
 ---
 
 ```{=html}
-<script>document.body.classList.add('dusk-active');</script>
-
 <div class="dusk-starfield" aria-hidden="true">
   <div class="dusk-star" style="width:1px;height:1px;top:3%;left:12%;--dur:4.2s;--del:0.3s;--lo:0.08;--hi:0.5;"></div>
   <div class="dusk-star" style="width:2px;height:2px;top:7%;left:31%;--dur:5.1s;--del:1.1s;--lo:0.1;--hi:0.65;"></div>
@@ -51,8 +50,50 @@ page-layout: full
   </header>
 
   <div class="proj-header-fade"></div>
-  
+
   <div class="proj-body">
+
+    <!-- OUTPUT SUMMARY ROW -->
+    <div class="proj-outputs-row">
+      <div class="proj-output-item">
+        <span class="proj-output-icon">⬡</span>
+        <span class="proj-output-label">Entity Intersection Table</span>
+        <span class="proj-output-desc">ICIJ entities with traceable auction market presence, by jurisdiction &amp; entity type</span>
+      </div>
+      <div class="proj-output-divider"></div>
+      <div class="proj-output-item">
+        <span class="proj-output-icon">◈</span>
+        <span class="proj-output-label">Network Graph</span>
+        <span class="proj-output-desc">Ownership &amp; intermediary structure around flagged nodes, betweenness centrality surfaced</span>
+      </div>
+      <div class="proj-output-divider"></div>
+      <div class="proj-output-item">
+        <span class="proj-output-icon">◇</span>
+        <span class="proj-output-label">Typology Mapping</span>
+        <span class="proj-output-desc">FATF indicator annotations — analytically rigorous and compliance-literate</span>
+      </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="proj-progress">
+      <div class="proj-progress-label">Project Progress</div>
+      <div class="proj-progress-track">
+        <div class="proj-progress-step proj-progress-step--active">
+          <div class="proj-progress-dot"></div>
+          <span>Data Assembly</span>
+        </div>
+        <div class="proj-progress-line"></div>
+        <div class="proj-progress-step">
+          <div class="proj-progress-dot"></div>
+          <span>Analysis</span>
+        </div>
+        <div class="proj-progress-line"></div>
+        <div class="proj-progress-step">
+          <div class="proj-progress-dot"></div>
+          <span>Published</span>
+        </div>
+      </div>
+    </div>
 
     <!-- Section I -->
     <div class="proj-section">
@@ -74,12 +115,12 @@ page-layout: full
           FATF's 2023 guidance on art market money laundering identifies the core
           structural risk: the layering stage in particular benefits from the art
           market's tolerance for anonymous or nominee ownership, the use of freeport
-          storage to hold assets outside normal customs and tax visibility, and the 
-          presence of sophisticated intermidiary chains - private dealers, advisors,
-          and holding structures - that place distance between the ultimate benificial
+          storage to hold assets outside normal customs and tax visibility, and the
+          presence of sophisticated intermediary chains — private dealers, advisors,
+          and holding structures — that place distance between the ultimate beneficial
           owner and any transaction record. These are not theoretical vulnerabilities.
-          The Panama and Pandora papers document specific instances of offshore
-          sturctures used to acquire high-value art, with ownership deliberately
+          The Panama and Pandora Papers document specific instances of offshore
+          structures used to acquire high-value art, with ownership deliberately
           routed through shell companies in low-transparency jurisdictions.
         </p>
         <p class="proj-prose">
@@ -126,8 +167,8 @@ page-layout: full
       <div class="proj-section-content">
         <h2 class="proj-section-title">Analytical Architecture</h2>
         <p class="proj-prose">
-        The project builds across 3 linked analytical layers, each producing
-        a distinct output that feeds into the next.
+          The project builds across 3 linked analytical layers, each producing
+          a distinct output that feeds into the next.
         </p>
         <p class="proj-prose">
           <strong style="color:#ede5d4;">Layer 1 — Entity matching.</strong>
@@ -143,22 +184,31 @@ page-layout: full
           <strong style="color:#ede5d4;">Layer 2 — Network construction.</strong>
           Build a directed network graph in R using igraph, where nodes are
           entities (persons, shell companies, auction houses, jurisdictions, freeports)
-          and edges are documented relationships (ownership, shared officer, 
+          and edges are documented relationships (ownership, shared officer,
           sole participation, geographic linkage, intermediary role). The primary
-          analytical output is this network - visualised to surface structural 
-          features: which nodes have high betweeness centrality (bridge entities),
+          analytical output is this network — visualised to surface structural
+          features: which nodes have high betweenness centrality (bridge entities),
           which jurisdictions cluster, and where the graph becomes locally dense
           in ways consistent with layering structures.
         </p>
         <p class="proj-prose">
           <strong style="color:#ede5d4;">Layer 3 — Typology mapping.</strong>
           For each flagged cluster or structurally significant node, annotate
-          against FATF's 2023 art market ML typology indicators. This is the 
-          interpretive layer that connects the graph findings to regulatory 
+          against FATF's 2023 art market ML typology indicators. This is the
+          interpretive layer that connects the graph findings to regulatory
           vocabulary: not a legal accusation, but a structured analytical mapping
           of what the data makes visible and which CDD or EDD provisions it would
           activate in a compliant infrastructure.
         </p>
+
+        <!-- Placeholder: Network graph -->
+        <div class="proj-output-placeholder">
+          <div class="proj-placeholder-inner">
+            <span class="proj-placeholder-icon">◈</span>
+            <p class="proj-placeholder-title">Network Graph</p>
+            <p class="proj-placeholder-desc">Ownership &amp; intermediary structure — ICIJ entities, auction houses, jurisdictions, freeport nodes. In progress.</p>
+          </div>
+        </div>
 
         <div class="proj-sources">
           <p class="proj-sources-label">Data Sources</p>
@@ -172,7 +222,7 @@ page-layout: full
           <div class="proj-source-row">
             <div class="proj-source-index">02</div>
             <div class="proj-source-body">
-              <p class="proj-source-name">Christie's & Sotheby's Public Sale Records</p>
+              <p class="proj-source-name">Christie's &amp; Sotheby's Public Sale Records</p>
               <p class="proj-source-desc">Publicly available lot-level sale results — lot title, hammer price, sale date, buyer/seller region. Used for entity matching against ICIJ records and for price anomaly context.</p>
             </div>
           </div>
@@ -203,14 +253,14 @@ page-layout: full
       <div class="proj-section-content">
         <h2 class="proj-section-title">What the output will show</h2>
         <p class="proj-prose">
-        The finished project delivers 3 outputs. A validated entity intersection
-        table - ICIJ entities with traceable auction market presence, annotated by 
-        jurisdiction and entity type. A network graph visualising the ownership and 
-        intermidiary structure around flagged nodes, with betweeness centrality
-        surfacing the bridged entities that connect otherwise seperate clusters.
-        And a structured typology annotation mapping each significant finding to
-        FATF indicator language - so the output is legible not just analytically
-        but in the vocabulary of a complicance  practitioner.
+          The finished project delivers 3 outputs. A validated entity intersection
+          table — ICIJ entities with traceable auction market presence, annotated by
+          jurisdiction and entity type. A network graph visualising the ownership and
+          intermediary structure around flagged nodes, with betweenness centrality
+          surfacing the bridging entities that connect otherwise separate clusters.
+          And a structured typology annotation mapping each significant finding to
+          FATF indicator language — so the output is legible not just analytically
+          but in the vocabulary of a compliance practitioner.
         </p>
         <p class="proj-prose">
           The goal is not to identify money launderers. It is to demonstrate what
@@ -218,6 +268,16 @@ page-layout: full
           rarely read together — and to practice the cross-source, ownership-tracing
           analysis that underlies real financial crime intelligence work.
         </p>
+
+        <!-- Placeholder: Entity intersection table -->
+        <div class="proj-output-placeholder">
+          <div class="proj-placeholder-inner">
+            <span class="proj-placeholder-icon">⬡</span>
+            <p class="proj-placeholder-title">Entity Intersection Table</p>
+            <p class="proj-placeholder-desc">ICIJ entity × auction record matches — name, jurisdiction, sale year, match confidence. In progress.</p>
+          </div>
+        </div>
+
       </div>
     </div>
 

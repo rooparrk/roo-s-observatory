@@ -893,3 +893,193 @@ body.dusk-active .footer-text { color: rgba(201, 169, 110, 0.28) !important; }
   .proj-section { grid-template-columns: 32px 1fr; gap: 1.2rem; }
   .proj-section-line { display: none; }
 }
+
+/* Project subpages enhancements */
+.proj-outputs-rows{
+  display: grid;
+  grid template-columns: 1fr auto 1fr auto 1fr;
+  align-items: start;
+  gap: 0;
+  margin: 3rem 0 2.5rem;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(201, 169, 110, 0.12);
+  border-radius: 6px;
+}
+
+.proj-output-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.25rem 1.5rem;
+}
+
+.proj-output-item:first-child {
+  padding-left: 0;
+}
+
+.proj-output-item:last-child {
+  padding-right: 0;
+}
+
+.proj-output-divider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(201, 169, 110, 0.15);
+  margin: 0.25rem 0;
+}
+
+.proj-output-icon {
+  font-size: 1.1rem;
+  color: var(--obs-amber);
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.proj-output-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--obs-cream);
+}
+
+.proj-output-desc {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: rgba(200, 216, 232, 0.65);
+}
+
+
+/* Progress Indicator */
+.proj-progress {
+  margin: 0 0 3.5rem;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.018);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+}
+
+.proj-progress-label {
+  font-family: var(--font-body);
+  font-size: 0.67rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(201, 169, 110, 0.55);
+  margin-bottom: 1rem;
+}
+
+.proj-progress-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.proj-progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.proj-progress-step span {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: rgba(200, 216, 232, 0.35);
+  white-space: nowrap;
+}
+
+.proj-progress-step--active span {
+  color: var(--obs-cream);
+}
+
+.proj-progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+.proj-progress-step--active .proj-progress-dot {
+  background: var(--obs-amber);
+  border-color: var(--obs-amber);
+  box-shadow: 0 0 8px rgba(201, 169, 110, 0.45);
+}
+
+.proj-progress-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 0 0.5rem;
+  margin-bottom: 1.25rem; /* align with dots not labels */
+}
+
+.proj-progress-line--active {
+  background: rgba(201, 169, 110, 0.35);
+}
+
+
+/* ── Output Placeholders ── */
+.proj-output-placeholder {
+  margin: 2rem 0;
+  border: 1px dashed rgba(201, 169, 110, 0.18);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.015);
+  padding: 2.5rem 2rem;
+}
+
+.proj-placeholder-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.proj-placeholder-icon {
+  font-size: 1.4rem;
+  color: var(--obs-amber);
+  opacity: 0.3;
+}
+
+.proj-placeholder-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(237, 229, 212, 0.4);
+  margin: 0;
+}
+
+.proj-placeholder-desc {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: rgba(200, 216, 232, 0.3);
+  max-width: 420px;
+  margin: 0;
+}
+
+/* ── Responsive overrides ── */
+@media (max-width: 640px) {
+  .proj-outputs-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .proj-output-divider {
+    display: none;
+  }
+  .proj-output-item {
+    padding: 0;
+  }
+  .proj-progress-track {
+    gap: 0;
+  }
+}
