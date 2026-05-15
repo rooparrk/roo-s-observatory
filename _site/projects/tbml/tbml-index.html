@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles1.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed dusk-active quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -157,158 +157,277 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<div class="dusk-starfield" aria-hidden="true">
+  <div class="dusk-star" style="width:1px;height:1px;top:3%;left:18%;--dur:4.5s;--del:0.6s;--lo:0.08;--hi:0.5;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:8%;left:40%;--dur:5.0s;--del:1.3s;--lo:0.1;--hi:0.62;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:5%;left:66%;--dur:3.7s;--del:0.2s;--lo:0.07;--hi:0.43;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:11%;left:83%;--dur:4.8s;--del:1.8s;--lo:0.09;--hi:0.58;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:4%;left:7%;--dur:3.9s;--del:0.9s;--lo:0.07;--hi:0.4;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:16%;left:55%;--dur:4.2s;--del:0.4s;--lo:0.06;--hi:0.37;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:20%;left:28%;--dur:5.2s;--del:1.5s;--lo:0.08;--hi:0.52;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:25%;left:74%;--dur:4.1s;--del:0.7s;--lo:0.06;--hi:0.38;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:9%;left:92%;--dur:3.6s;--del:2.1s;--lo:0.07;--hi:0.44;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:30%;left:12%;--dur:4.7s;--del:1.0s;--lo:0.08;--hi:0.5;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:13%;left:48%;--dur:4.4s;--del:0.3s;--lo:0.06;--hi:0.35;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:22%;left:88%;--dur:5.0s;--del:1.2s;--lo:0.07;--hi:0.42;"></div>
+</div>
+
 <div class="proj-page">
 
-  <!-- PAGE HEADER -->
   <header class="proj-header">
     <div class="proj-header-inner">
       <div class="proj-back">
         <a href="../../index.html" class="proj-back-link">← All Projects</a>
       </div>
-      <p class="proj-eyebrow">Quantitative Analysis · Trade Finance · AML Typologies</p>
+      <p class="proj-eyebrow">Quantitative Analysis · Trade Finance · Mirror Trade Discrepancy</p>
       <h1 class="proj-title">Trade-Based Money Laundering</h1>
       <p class="proj-subtitle">
-        TBML is one of the most significant and least visible ML typologies —
-        manipulating trade invoices to move value across borders. Using UN Comtrade
-        mirror trade data, this project surfaces discrepancies across high-risk
-        corridors and maps them to FATF and MAS Notice 626 frameworks.
+        TBML hides inside the normal machinery of international commerce —
+        invoice manipulation, phantom shipments, and multiple invoicing exploit
+        the volume and opacity of trade documentation at scale. This project applies
+        mirror trade discrepancy analysis to UN Comtrade bilateral data across
+        SEA and South Asian corridors, mapping persistent anomalies against FATF
+        typology indicators and MAS Notice 626.
       </p>
       <div class="proj-header-rule"></div>
       <div class="proj-tag-row">
-        <span class="proj-tag">Python</span>
+        <span class="proj-tag">Python · pandas</span>
         <span class="proj-tag">UN Comtrade API</span>
-        <span class="proj-tag">Pandas</span>
-        <span class="proj-tag">FATF Typologies</span>
+        <span class="proj-tag">seaborn · plotly</span>
+        <span class="proj-tag">FATF TBML</span>
         <span class="proj-tag">MAS Notice 626</span>
         <span class="proj-tag proj-tag--status">In Progress ◎</span>
       </div>
     </div>
   </header>
 
-  <!-- BODY -->
+  <div class="proj-header-fade"></div>
+
   <div class="proj-body">
 
-    <!-- Section 1 -->
+    <!-- Output Summary Row -->
+    <div class="proj-outputs-row">
+      <div class="proj-output-item">
+        <span class="proj-output-icon">⬡</span>
+        <span class="proj-output-label">Python Notebook</span>
+        <span class="proj-output-desc">Full pipeline — API pull, discrepancy calculation, persistence flagging, corridor ranking</span>
+      </div>
+      <div class="proj-output-divider"></div>
+      <div class="proj-output-item">
+        <span class="proj-output-icon">◈</span>
+        <span class="proj-output-label">Discrepancy Heatmap</span>
+        <span class="proj-output-desc">Anomaly magnitude by corridor &amp; commodity category across the analysis period</span>
+      </div>
+      <div class="proj-output-divider"></div>
+      <div class="proj-output-item">
+        <span class="proj-output-icon">◇</span>
+        <span class="proj-output-label">Time-Series Charts</span>
+        <span class="proj-output-desc">Discrepancy ratio over 5 years for the top flagged corridors — the persistence argument</span>
+      </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="proj-progress">
+      <div class="proj-progress-label">Project Progress</div>
+      <div class="proj-progress-track">
+        <div class="proj-progress-step proj-progress-step--active">
+          <div class="proj-progress-dot"></div>
+          <span>Data Assembly</span>
+        </div>
+        <div class="proj-progress-line"></div>
+        <div class="proj-progress-step">
+          <div class="proj-progress-dot"></div>
+          <span>Analysis</span>
+        </div>
+        <div class="proj-progress-line"></div>
+        <div class="proj-progress-step">
+          <div class="proj-progress-dot"></div>
+          <span>Published</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section I -->
     <div class="proj-section">
       <div class="proj-section-marker">
         <span class="proj-section-num">I</span>
         <div class="proj-section-line"></div>
       </div>
       <div class="proj-section-content">
-        <h2 class="proj-section-title anchored">Why TBML, and why mirror trade analysis</h2>
+        <h2 class="proj-section-title anchored">Why TBML, and why mirror trade</h2>
         <p class="proj-prose">
-          Trade-based money laundering accounts for a significant share of illicit
-          financial flows globally, yet it remains one of the hardest typologies
-          to detect — because it hides in plain sight, inside the normal machinery
-          of international commerce. Over- and under-invoicing of goods, phantom
-          shipments, and multiple invoicing all exploit the opacity of trade
-          documentation and the volume of transactions that pass through ports
-          every day.
+          Trade-based money laundering is consistently identified by FATF as one of
+          the three primary methods by which criminal organisations move and clean
+          value globally — alongside bulk cash smuggling and the use of the formal
+          financial system. Unlike the other two, TBML leaves its traces not in
+          financial records but in trade documentation: shipping invoices, letters
+          of credit, and customs declarations that move through a system handling
+          hundreds of millions of transactions annually.
         </p>
         <p class="proj-prose">
-          Singapore's position as a major trade hub makes this directly relevant.
-          MAS Notice 626 and FATF's TBML guidance both identify trade finance
-          as a high-risk channel, and the ability to read and flag TBML indicators
-          is a concrete, valued skill in compliance roles across the region.
+          The core manipulation methods — over- and under-invoicing of goods and
+          services, multiple invoicing for the same shipment, falsely described goods,
+          and phantom shipments — all produce a predictable statistical signature when
+          examined at the bilateral level. When Country A reports exporting a given
+          value of electronics to Country B, but Country B reports importing a
+          materially different value of electronics from Country A in the same period,
+          that discrepancy is either a reporting artefact or a signal. At scale,
+          across corridors and over time, the persistent cases become analytically
+          distinguishable from the noise.
         </p>
         <p class="proj-prose">
-          Mirror trade analysis is the methodological core: when Country A reports
-          exporting $X worth of electronics to Country B, but Country B reports
-          importing only $0.6X of electronics from Country A in the same period,
-          that discrepancy is a signal. At scale, across bilateral corridors and
-          commodity categories, patterns emerge.
+          Singapore's position as a major regional trade hub makes this directly
+          relevant. MAS Notice 626 identifies trade finance as a high-risk channel
+          and specifies red flag indicators for TBML that mirror the analytical
+          logic of this project. The ability to surface and interpret these
+          discrepancy patterns is a concrete, transferable skill in compliance
+          and transaction risk roles across the region.
         </p>
       </div>
     </div>
 
-    <!-- Section 2 -->
+    <!-- Section II -->
     <div class="proj-section">
       <div class="proj-section-marker">
         <span class="proj-section-num">II</span>
         <div class="proj-section-line"></div>
       </div>
       <div class="proj-section-content">
-        <h2 class="proj-section-title anchored">Scope &amp; method</h2>
+        <h2 class="proj-section-title anchored">Analytical question</h2>
         <p class="proj-prose">
-          The analysis focuses on Southeast Asian and South Asian bilateral trade
-          corridors — geographies with documented TBML exposure and meaningful
-          volume in the UN Comtrade dataset. Commodity categories are filtered to
-          those historically associated with TBML: electronics, textiles, precious
-          metals, and agri-commodities with high price variability.
+          Across a defined set of SEA and South Asian bilateral trade corridors
+          and TBML-associated commodity categories, which country-pairs show
+          persistent mirror trade discrepancies above a defined materiality
+          threshold — and do those discrepancy patterns align with FATF-documented
+          TBML risk corridors and MAS Notice 626 red flag indicators?
         </p>
         <p class="proj-prose">
-          For each corridor and commodity pair, the project calculates discrepancy
-          ratios between the export-side and import-side reports, flags outliers
-          by magnitude and persistence over time, and cross-references against
-          FATF's published TBML typology indicators to assess plausibility of
-          ML risk versus statistical noise.
+          Persistence is the key analytical criterion. A single-year discrepancy
+          may reflect reporting lag, classification differences, or transit trade
+          accounting. A discrepancy that exceeds a defined threshold across three
+          or more consecutive years — in the same corridor, in the same commodity
+          category — is analytically significant and warrants annotation against
+          the typology framework.
         </p>
-
-        <!-- Source rows -->
-        <div class="proj-sources">
-          <p class="proj-sources-label">Data Sources</p>
-          <div class="proj-source-row">
-            <div class="proj-source-index">01</div>
-            <div class="proj-source-body">
-              <p class="proj-source-name">UN Comtrade API</p>
-              <p class="proj-source-desc">Bilateral trade statistics reported by both exporting and importing countries — the foundational dataset for mirror trade discrepancy analysis. Free API access.</p>
-            </div>
-          </div>
-          <div class="proj-source-row">
-            <div class="proj-source-index">02</div>
-            <div class="proj-source-body">
-              <p class="proj-source-name">FATF TBML Guidance</p>
-              <p class="proj-source-desc">Published typology indicators for trade-based laundering — used to frame which discrepancy patterns are analytically meaningful versus artefacts of reporting.</p>
-            </div>
-          </div>
-          <div class="proj-source-row">
-            <div class="proj-source-index">03</div>
-            <div class="proj-source-body">
-              <p class="proj-source-name">MAS Notice 626</p>
-              <p class="proj-source-desc">Singapore's AML/CFT notice for banks, with specific provisions on trade finance risk — the local regulatory grounding for the analysis.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
-    <!-- Section 3 -->
+    <!-- Section III -->
     <div class="proj-section">
       <div class="proj-section-marker">
         <span class="proj-section-num">III</span>
         <div class="proj-section-line"></div>
       </div>
       <div class="proj-section-content">
-        <h2 class="proj-section-title anchored">Expected output</h2>
+        <h2 class="proj-section-title anchored">Scope &amp; method</h2>
         <p class="proj-prose">
-          A Python notebook containing the full data pipeline — API pull, cleaning,
-          discrepancy calculation, and corridor-level flagging — alongside
-          visualisations of discrepancy magnitude across corridors and commodity
-          categories. Written commentary maps the findings to MAS Notice 626 red
-          flag indicators and FATF TBML typology language, so the output reads as
-          both analytical and compliance-literate.
+          The analysis covers 8–10 bilateral trade corridors across Southeast and
+          South Asia — geographies with documented TBML exposure and sufficient
+          reporting volume in UN Comtrade to support reliable bilateral comparison.
+          Commodity categories are filtered to four HS code clusters historically
+          associated with TBML risk: electronics and electrical components,
+          textiles and garments, precious metals and stones, and high-variability
+          agri-commodities.
         </p>
         <p class="proj-prose">
-          The differentiator here is specificity: almost nobody does mirror trade
-          analysis as a portfolio project, and doing it well — with genuine data,
-          a sound methodology, and regulatory grounding — directly signals
-          Singapore-relevant knowledge to any compliance or risk team in the region.
+          The analytical pipeline runs in four steps. Data is pulled from the
+          UN Comtrade API using the Python wrapper, covering 2018–2023 to capture
+          five years of bilateral trade flows. For each corridor-commodity pair,
+          a discrepancy ratio is calculated as reported exports divided by reported
+          imports, normalised for known structural factors (re-export volumes,
+          CIF/FOB valuation differences). Pairs where the ratio deviates
+          significantly from 1.0 are flagged; those exceeding the threshold in
+          three or more consecutive years are classified as persistent anomalies.
+          Finally, flagged pairs are annotated against FATF TBML typology indicators
+          and MAS Notice 626 red flag language.
         </p>
+
+        <!-- Placeholder: Discrepancy heatmap -->
+        <div class="proj-output-placeholder">
+          <div class="proj-placeholder-inner">
+            <span class="proj-placeholder-icon">◈</span>
+            <p class="proj-placeholder-title">Discrepancy Heatmap</p>
+            <p class="proj-placeholder-desc">Anomaly magnitude by corridor × commodity — 8–10 SEA/South Asian corridors, 4 HS code clusters, 2018–2023. In progress.</p>
+          </div>
+        </div>
+
+        <div class="proj-sources">
+          <p class="proj-sources-label">Data Sources</p>
+          <div class="proj-source-row">
+            <div class="proj-source-index">01</div>
+            <div class="proj-source-body">
+              <p class="proj-source-name">UN Comtrade API</p>
+              <p class="proj-source-desc">Bilateral trade statistics reported independently by exporting and importing countries — the foundational dataset for mirror trade analysis. Accessed via the comtradeapicall Python wrapper. Free API access with registration.</p>
+            </div>
+          </div>
+          <div class="proj-source-row">
+            <div class="proj-source-index">02</div>
+            <div class="proj-source-body">
+              <p class="proj-source-name">FATF Trade-Based Money Laundering Guidance</p>
+              <p class="proj-source-desc">Published typology indicators and risk corridor documentation — used to define which discrepancy patterns are analytically meaningful and which commodity-corridor combinations carry elevated TBML risk.</p>
+            </div>
+          </div>
+          <div class="proj-source-row">
+            <div class="proj-source-index">03</div>
+            <div class="proj-source-body">
+              <p class="proj-source-name">MAS Notice 626</p>
+              <p class="proj-source-desc">Singapore's AML/CFT notice for banks and financial institutions, with specific provisions on trade finance risk assessment and red flag indicators for TBML — the local regulatory grounding for analytical interpretation.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Living notice -->
+    <!-- Section IV -->
+    <div class="proj-section">
+      <div class="proj-section-marker">
+        <span class="proj-section-num">IV</span>
+        <div class="proj-section-line"></div>
+      </div>
+      <div class="proj-section-content">
+        <h2 class="proj-section-title anchored">Output &amp; analytical deliverables</h2>
+        <p class="proj-prose">
+          The project delivers three linked outputs. A Python notebook documenting
+          the full analytical pipeline — API data pull, cleaning, discrepancy
+          calculation, persistence flagging, and corridor ranking — with inline
+          commentary explaining each methodological decision. A discrepancy heatmap
+          showing anomaly magnitude by corridor and commodity category across the
+          analysis period, making the highest-risk patterns immediately legible.
+          And a persistent-anomaly time-series chart for the top five flagged
+          corridors, showing discrepancy ratio over five years — the visual argument
+          for why persistence is the analytically meaningful signal.
+        </p>
+        <p class="proj-prose">
+          Each flagged corridor is annotated in a structured table against specific
+          FATF typology indicators and MAS Notice 626 red flag provisions — so the
+          output reads as both analytically rigorous and compliance-literate. A
+          dedicated limitations section acknowledges structural data constraints:
+          CIF/FOB valuation differences, re-export accounting, and reporting lag
+          are all documented artefacts that affect the discrepancy ratio and must
+          be controlled for before drawing analytical conclusions.
+        </p>
+
+        <!-- Placeholder: Time-series -->
+        <div class="proj-output-placeholder">
+          <div class="proj-placeholder-inner">
+            <span class="proj-placeholder-icon">◇</span>
+            <p class="proj-placeholder-title">Corridor Time-Series</p>
+            <p class="proj-placeholder-desc">Discrepancy ratio 2018–2023 for top 5 flagged corridors — the persistence signal visualised. In progress.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <div class="proj-notice">
       <span class="proj-notice-mark">✦</span>
       <p class="proj-notice-text">
-        <em>Work in progress — the Python notebook and visualisations will be
-        published here as the analysis develops.</em>
+        Analysis in progress. Python notebook, discrepancy heatmap, and
+        corridor time-series will be published here as outputs are completed.
       </p>
     </div>
 
   </div>
-
 </div>
 
 
