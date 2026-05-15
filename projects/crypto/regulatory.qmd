@@ -1,24 +1,32 @@
 ---
 title: ""
-format:
-  html:
-    page-layout: custom
-    title-block-banner: false
+page-layout: full
+body-classes: dusk-active
 ---
 
 ```{=html}
+<div class="dusk-starfield" aria-hidden="true">
+  <div class="dusk-star" style="width:1px;height:1px;top:3%;left:20%;--dur:4.5s;--del:0.5s;--lo:0.07;--hi:0.45;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:7%;left:55%;--dur:5.0s;--del:1.2s;--lo:0.09;--hi:0.58;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:5%;left:80%;--dur:3.8s;--del:0.3s;--lo:0.07;--hi:0.4;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:11%;left:38%;--dur:4.2s;--del:1.7s;--lo:0.06;--hi:0.36;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:4%;left:9%;--dur:4.8s;--del:0.8s;--lo:0.08;--hi:0.52;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:15%;left:67%;--dur:4.1s;--del:0.4s;--lo:0.06;--hi:0.37;"></div>
+  <div class="dusk-star" style="width:1px;height:1px;top:9%;left:90%;--dur:5.2s;--del:1.5s;--lo:0.07;--hi:0.43;"></div>
+  <div class="dusk-star" style="width:2px;height:2px;top:20%;left:44%;--dur:4.6s;--del:0.9s;--lo:0.08;--hi:0.5;"></div>
+</div>
+
 <div class="proj-page">
 
-  <div class="proj-back">
-    <a href="/projects/crypto/" class="proj-back-link">← Crypto &amp; Financial Crime</a>
-  </div>
-
-  <div class="proj-header">
+  <header class="proj-header">
     <div class="proj-header-inner">
+      <div class="proj-back">
+        <a href="crypto-index.html" class="proj-back-link">← Crypto &amp; Financial Crime</a>
+      </div>
       <p class="proj-eyebrow">Research Thread · Regulatory Landscape</p>
       <h1 class="proj-title">Virtual Assets &amp; the AML Regime</h1>
       <p class="proj-subtitle">How FATF, Singapore, and the EU are trying to regulate what they can barely see</p>
-      <hr class="proj-header-rule">
+      <div class="proj-header-rule"></div>
       <div class="proj-tag-row">
         <span class="proj-tag">FATF R.15</span>
         <span class="proj-tag">MAS PSN02</span>
@@ -27,7 +35,9 @@ format:
         <span class="proj-tag proj-tag--status">Draft in progress ◉</span>
       </div>
     </div>
-  </div>
+  </header>
+
+  <div class="proj-header-fade"></div>
 
   <div class="proj-body">
 
@@ -132,7 +142,7 @@ format:
     <!-- LIVING NOTICE -->
     <div class="proj-notice">
       <span class="proj-notice-mark">◉</span>
-      <p class="proj-notice-text">This piece is being written in stages as the research develops. Sections will be published as they are ready. Last updated: April 2026.</p>
+      <p class="proj-notice-text">This piece is being written in stages as the research develops. Sections will be published as they are ready. Last updated: May 2026.</p>
     </div>
 
   </div>
