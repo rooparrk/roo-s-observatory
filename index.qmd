@@ -41,7 +41,7 @@ title-block-banner: false
   <div class="obs-star" style="width:1px;height:1px;top:95%;left:15%;--dur:3.9s;--del:0.3s;--lo:0.1;--hi:0.65;"></div>
 </div>
 
-<!-- HERO -->
+<!-- Main -->
 <div class="obs-home-page">
 
   <div class="obs-home-hero">
@@ -49,25 +49,26 @@ title-block-banner: false
     <h1 class="obs-title">Roopa Kaustubha <em>Rayudu</em></h1>
     <p class="obs-subtitle">soft mind, sharp thinking</p>
     <div class="obs-hero-specs-row">
-      <span class="obs-hero-spec">Financial Crime Analytics</span>
+      <span class="obs-hero-spec">Investigative Data Analytics</span>
       <span class="obs-hero-spec-dot">·</span>
-      <span class="obs-hero-spec">AML &amp; Transaction Risk</span>
+      <span class="obs-hero-spec">Network &amp; Anomaly Analysis</span>
       <span class="obs-hero-spec-dot">·</span>
-      <span class="obs-hero-spec">Singapore &amp; SEA</span>
+      <span class="obs-hero-spec">Fintech &amp; Regulatory Systems</span>
     </div>
   </div>
 
-  <!-- METHOD STATEMENT + PROJECTS -->
+  <!-- Method statement + Projects -->
   <div class="obs-home-projects">
 
     <div class="obs-home-projects-header">
-      <p class="obs-section-label">Independent Work · Financial Crime</p>
+      <p class="obs-section-label">Independent Work · Analytical Projects</p>
       <div class="obs-section-title" style="margin-bottom:1rem;">Projects</div>
       <p class="obs-home-method">
-        Each project takes a documented laundering typology, applies analytical
-        methods to real or public data, and maps findings against the regulatory
-        frameworks that govern detection — FATF guidance, MAS Notice 626,
-        and the evolving oversight landscape for virtual assets.
+        Each project applies a distinct analytical method — network analysis,
+        bilateral trade discrepancy modelling, on-chain graph analytics — to
+        real public datasets. Domain focus is financial systems: how value moves,
+        how ownership is structured, and where regulatory frameworks attempt to
+        make those flows visible.
       </p>
     </div>
 
@@ -76,14 +77,15 @@ title-block-banner: false
       <div class="obs-project-index">01</div>
       <div class="obs-project-body">
         <div class="obs-project-meta">
-          <span class="obs-project-domain">Art Markets · PEP Networks</span>
-          <span class="obs-project-tools">R · Tableau · ICIJ · AML</span>
+          <span class="obs-project-domain">Network Analysis · Ownership Structures</span>
+          <span class="obs-project-tools">R · igraph · ICIJ · OpenSanctions</span>
         </div>
         <h3 class="obs-project-title">Art Markets &amp; the PEP Problem</h3>
-          The art market's opacity makes it a documented vehicle for laundering —
-          especially among politically exposed persons. Combining auction data,
-          ICIJ offshore leaks, and PEP network analysis to visualise how money
-          and influence move through high-value cultural assets.
+          Cross-referencing ICIJ offshore entity data with public auction records
+          to build ownership and intermediary networks around flagged nodes.
+          Applies graph-level structural analysis — betweenness centrality,
+          jurisdictional clustering — to surface patterns consistent with
+          FATF high-value asset typology indicators.
         </p>
       </div>
       <div class="obs-project-arrow">→</div>
@@ -94,15 +96,15 @@ title-block-banner: false
       <div class="obs-project-index">02</div>
       <div class="obs-project-body">
         <div class="obs-project-meta">
-          <span class="obs-project-domain">Trade Finance · Mirror Analysis</span>
-          <span class="obs-project-tools">Python · UN Comtrade · FATF</span>
+          <span class="obs-project-domain">Quantitative Anomaly Detection · Trade Data</span>
+          <span class="obs-project-tools">Python · UN Comtrade API · pandas</span>
         </div>
         <h3 class="obs-project-title">Trade-Based Money Laundering</h3>
         <p class="obs-project-desc">
-          TBML is one of the most significant and least visible ML typologies —
-          manipulating trade invoices to move value across borders. Using UN Comtrade
-          mirror trade data, this project surfaces discrepancies across high-risk
-          corridors and maps them to FATF and MAS Notice 626 frameworks.
+          Bilateral discrepancy analysis across SEA and South Asian trade corridors
+          using UN Comtrade mirror data. Builds a Python pipeline to calculate
+          persistent invoice anomalies by corridor and commodity category,
+          mapped against MAS Notice 626 red flag indicators.
         </p>
       </div>
       <div class="obs-project-arrow">→</div>
@@ -113,15 +115,15 @@ title-block-banner: false
       <div class="obs-project-index">03</div>
       <div class="obs-project-body">
         <div class="obs-project-meta">
-          <span class="obs-project-domain">On-Chain Analytics · Regulation</span>
-          <span class="obs-project-tools">Python · Etherscan · Research</span>
+          <span class="obs-project-domain">On-Chain Graph Analytics · Regulatory Mapping</span>
+          <span class="obs-project-tools">Python · networkx · Etherscan · Elliptic</span>
         </div>
         <h3 class="obs-project-title">Crypto &amp; Financial Crime</h3>
         <p class="obs-project-desc">
-          Tracing transaction flows, understanding mixer patterns, and mapping where
-          MAS and FATF guidance currently stands on virtual asset oversight —
-          combining on-chain analytics with the evolving regulatory landscape
-          for crypto-enabled financial crime.
+          Graph feature analysis on the Elliptic labelled Bitcoin transaction dataset —
+          comparing structural signatures of illicit versus licit node clusters.
+          Paired with a comparative regulatory mapping across FATF R.15,
+          MAS PSN02, and EU MiCA on virtual asset oversight.
         </p>
       </div>
       <div class="obs-project-arrow">→</div>
