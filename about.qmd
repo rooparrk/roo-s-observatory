@@ -41,11 +41,11 @@ page-layout: full
     <h1 class="obs-title">Roopa Kaustubha <em>Rayudu</em></h1>
     <p class="obs-subtitle">soft mind, sharp thinking</p>
     <p class="obs-note">
-      I study how hidden financial structures operate — and use data to trace the patterns they leave behind.
+      I study how financial systems operate — and use data to trace the patterns they leave behind.
       Currently completing a Masters in IT in Business (Financial Technology &amp; Analytics) at SMU,
-      building toward a career in <strong>behavioral financial crime analytics</strong>:
-      transaction risk, AML typology analysis, and the intersection of ownership structures,
-      financial flows, and regulatory frameworks across Singapore and the wider region.
+      building toward analytical work at the intersection of <strong>data, financial systems, and regulatory intelligence</strong>:
+      network analysis, anomaly detection, transaction risk, and the structural logic
+      of how value moves — and where oversight frameworks attempt to make it visible.
     </p>
   </div>
 
