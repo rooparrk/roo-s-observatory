@@ -3,8 +3,13 @@ project:
   output-dir: _site
  
 website:
-  title: "Roo's Observatory"
+  open-graph:
+    title: "Roo's Observatory"
   favicon: images/favicon.png
+  description: "Investigative data analytics across financial systems — network analysis, anomaly detection, and regulatory intelligence."
+  image: og-image.svg
+  twitter-card:
+    image: og-image.svg
   
   navbar:
     logo: images/logo.png
