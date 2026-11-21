@@ -91,44 +91,6 @@ title-block-banner: false
       <div class="obs-project-arrow">→</div>
     </a>
 
-    <!-- Project 02 -->
-    <a href="projects/tbml/tbml-index.html" class="obs-project-row">
-      <div class="obs-project-index">02</div>
-      <div class="obs-project-body">
-        <div class="obs-project-meta">
-          <span class="obs-project-domain">Quantitative Anomaly Detection · Trade Data</span>
-          <span class="obs-project-tools">Python · UN Comtrade API · pandas</span>
-        </div>
-        <h3 class="obs-project-title">Trade-Based Money Laundering</h3>
-        <p class="obs-project-desc">
-          Bilateral discrepancy analysis across SEA and South Asian trade corridors
-          using UN Comtrade mirror data. Builds a Python pipeline to calculate
-          persistent invoice anomalies by corridor and commodity category,
-          mapped against MAS Notice 626 red flag indicators.
-        </p>
-      </div>
-      <div class="obs-project-arrow">→</div>
-    </a>
-
-    <!-- Project 03 -->
-    <a href="projects/crypto/crypto-index.html" class="obs-project-row">
-      <div class="obs-project-index">03</div>
-      <div class="obs-project-body">
-        <div class="obs-project-meta">
-          <span class="obs-project-domain">On-Chain Graph Analytics · Regulatory Mapping</span>
-          <span class="obs-project-tools">Python · networkx · Etherscan · Elliptic</span>
-        </div>
-        <h3 class="obs-project-title">Crypto &amp; Financial Crime</h3>
-        <p class="obs-project-desc">
-          Graph feature analysis on the Elliptic labelled Bitcoin transaction dataset —
-          comparing structural signatures of illicit versus licit node clusters.
-          Paired with a comparative regulatory mapping across FATF R.15,
-          MAS PSN02, and EU MiCA on virtual asset oversight.
-        </p>
-      </div>
-      <div class="obs-project-arrow">→</div>
-    </a>
-
   </div>
 
 </div>
