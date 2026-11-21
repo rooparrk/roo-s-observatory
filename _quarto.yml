@@ -26,10 +26,6 @@ website:
         menu:
           - text: "Art Markets & the PEP Problem"
             href: projects/art-pep/art-pep-index.qmd
-          - text: "Trade-Based Money Laundering"
-            href: projects/tbml/tbml-index.qmd
-          - text: "Crypto & Financial Crime"
-            href: projects/crypto/crypto-index.qmd
       - icon: linkedin
         href: https://linkedin.com/in/roopa-kaustubha-rayudu-53ba5216b/
         aria-label: LinkedIn
